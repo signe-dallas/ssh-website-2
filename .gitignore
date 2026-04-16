@@ -1,0 +1,7 @@
+﻿# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/*.code-workspace
+
+# Local logs
+*.log
