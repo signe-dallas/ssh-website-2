@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charSet="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preload" as="image" imageSrcSet="./images/logos/nacubo-ssh-logo.png 1x, ./images/logos/nacubo-ssh-logo.png 2x"/>
+<link rel="stylesheet" href="./_next/static/chunks/2a90029b06235703.css" data-precedence="next"/>
+<style>
+html { scroll-behavior: smooth; }
+.t-content-top-grid {
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+.t-content-breadcrumb-band {
+  background: linear-gradient(135deg, #212427 0%, #0c647b 100%);
+  padding: 1.6rem 0 1.5rem;
+}
+.t-content-breadcrumb-band > div {
+  width: 100%;
+}
+.t-content-breadcrumb-band nav {
+  transform: translateY(-0.2rem);
+}
+.t-content-intro-section {
+  padding: 45px 0;
+}
+.t-content-primary {
+  max-width: 72ch;
+  min-width: 0;
+}
+.t-content-main-title {
+  font-size: 2.25rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-bottom: 0.75rem;
+}
+.t-content-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+.t-content-intro + .t-content-intro {
+  margin-top: 0.95rem;
+}
+.t-content-primary h2 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-top: 1.875rem;
+  margin-bottom: 0.5625rem;
+}
+.t-content-primary > h2:first-of-type {
+  margin-top: 2.25rem;
+}
+.t-content-soft-card {
+  background: #eaf0f2;
+  border-radius: 14px;
+  padding: 15px 14px;
+}
+.t-content-soft-card svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+.t-content-soft-card p:first-child {
+  font-size: 18px;
+  line-height: 1.3;
+}
+.t-content-soft-card p:last-child {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.t-content-sidebar {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+}
+@media (max-width: 1024px) {
+  .t-content-sidebar {
+    position: static;
+  }
+}
+.t-content-right-card {
+  background: #eaf0f2;
+  border-color: #e5e5e5;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.t-content-right-card h3 {
+  font-size: 1.5rem;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+.t-content-help-image {
+  width: 124px;
+  height: 124px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6e787c;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.t-content-help-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.t-content-help-name {
+  color: #212427;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.t-content-help-contact {
+  color: #212427;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.t-content-help-email {
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+}
+.t-content-related-title {
+  font-size: 14px;
+  line-height: 1.35;
+}
+.t-content-related-copy,
+.t-content-related-link {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.t-content-launch {
+  border-radius: 4px;
+  min-height: 48px;
+  font-size: 16px;
+}
+.t-content-browse-link {
+  font-size: 14px;
+}
+.t-content-share-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.t-content-share-button {
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  border: 1px solid #d8e0e3;
+  background: #fff;
+  color: #0c647b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.t-content-share-button:hover {
+  background: #0c647b;
+  border-color: #0c647b;
+  color: #fff;
+}
+.t-content-share-button svg {
+  width: 15px;
+  height: 15px;
+}
+.t-content-scroll-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.t-content-scroll-link h3 {
+  color: #212427;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+.t-content-scroll-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  border: 2px solid #0c647b;
+  color: #0c647b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+#how-others-used {
+  scroll-margin-top: 75px;
+}
+.t-content-scroll-arrow:hover {
+  background: #0c647b;
+  color: #fff;
+  transform: translateY(2px);
+}
+.t-content-detail-section {
+  padding-bottom: 6px;
+}
+.t-content-detail {
+  max-width: 72ch;
+}
+.t-content-detail h2 {
+  color: #212427;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 1.875rem 0 0.5625rem;
+}
+.t-content-detail h2:first-child {
+  margin-top: 2.5rem;
+}
+.t-content-detail h2 + ul {
+  margin-bottom: 1.875rem;
+}
+.t-content-audience-list {
+  color: #212427;
+  font-size: 18px;
+  line-height: 1.7;
+  padding-left: 1.6rem;
+}
+.t-content-audience-list li + li {
+  margin-top: 0.375rem;
+}
+.t-content-use-intro {
+  color: #212427;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 0 1.125rem;
+}
+.t-content-use-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.t-content-use-card {
+  border: 2px solid;
+  border-radius: 16px;
+  padding: 21px 20px;
+}
+.t-content-use-card.accent {
+  background: #e6f9f7;
+  border-color: #23d3c1;
+}
+.t-content-use-card.secondary {
+  background: #fff9e6;
+  border-color: #ffcc2e;
+}
+.t-content-use-card.primary {
+  background: #e6f0f2;
+  border-color: #0c647b;
+}
+.t-content-use-card .icon-chip {
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background: #fff;
+  flex: 0 0 auto;
+  margin-left: -8px;
+  margin-top: -4px;
+}
+.t-content-use-card svg {
+  width: 18px;
+  height: 18px;
+}
+.t-content-use-card h3 {
+  color: #09111a;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+  margin: 0 0 9px;
+}
+.t-content-use-card p {
+  color: #09111a;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .t-content-top-grid {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+  .t-content-primary {
+    max-width: none;
+  }
+  .t-content-main-title {
+    font-size: 2.2rem;
+  }
+}
+</style>
+<meta name="theme-color" content="#0C647B"/>
+<title>Toolkit Content Template | Toolkits | NACUBO Student Success Hub</title>
+<meta name="description" content="Toolkit Content Template"/>
+<link rel="icon" href="./icon.png" sizes="53x53" type="image/png"/>
+</head>
+<body>
+<div class="bg-accent">
+  <div class="max-w-container mx-auto px-6 py-1.5">
+    <a class="flex items-center justify-center gap-2 text-xs font-semibold text-charcoal hover:text-primary transition-colors group" href="./proposal.html">
+      <span>Read Our Vision for the Future | View Proposal</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 translate-y-px group-hover:translate-x-1 transition-transform" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+    </a>
+  </div>
+</div>
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <div class="border-b border-gray-light">
+    <div class="max-w-container mx-auto px-6 h-header flex items-center justify-between">
+      <a class="inline-flex items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" aria-label="NACUBO Student Success Hub - Home" href="./index.html">
+        <img alt="NACUBO Student Success Hub" width="180" height="49" decoding="async" style="color:transparent" srcSet="./images/logos/nacubo-ssh-logo.png 1x, ./images/logos/nacubo-ssh-logo.png 2x" src="./images/logos/nacubo-ssh-logo.png"/>
+      </a>
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+        <a href="./about.html" class="px-3 py-2 text-nav font-medium rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-charcoal hover:text-primary hover:bg-gray-lighter">About</a>
+        <a href="./get-started.html" class="px-3 py-2 text-nav font-medium rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-charcoal hover:text-primary hover:bg-gray-lighter">New Here</a>
+        <div class="relative group" id="toolkits-nav-dropdown">
+<button id="toolkits-nav-toggle" type="button" class="px-3 py-2 text-nav font-medium rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-charcoal hover:text-primary hover:bg-gray-lighter inline-flex items-center gap-1" aria-expanded="false" aria-controls="toolkits-nav-menu">Toolkits
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+</button>
+<div id="toolkits-nav-menu" class="absolute left-0 top-full hidden min-w-[220px] rounded-md border border-gray-light bg-white shadow-md z-50 group-hover:block group-focus-within:block">
+<a href="https://app.nacubostudentsuccess.org/login" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Access Toolkits</a>
+<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Find Toolkit</a>
+<a href="./overviw.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Overview</a>
+</div>
+</div>
+<a href="./events-and-resources.html" class="px-3 py-2 text-nav font-medium rounded transition-colors text-charcoal hover:text-primary hover:bg-gray-lighter">Events and Resources</a>
+        <a href="./institutional-stories.html" class="px-3 py-2 text-nav font-medium rounded transition-colors text-charcoal hover:text-primary hover:bg-gray-lighter">Case Studies</a>
+        <a href="./services.html" class="px-3 py-2 text-nav font-medium rounded transition-colors text-charcoal hover:text-primary hover:bg-gray-lighter">Services</a>
+        <a href="./connect.html" class="px-3 py-2 text-nav font-medium rounded transition-colors text-charcoal hover:text-primary hover:bg-gray-lighter">Connect</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="./search.html" aria-label="Search" class="p-2 rounded hover:bg-gray-lighter transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-charcoal" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a>
+        <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-4 py-2 text-sm" href="https://app.nacubostudentsuccess.org/login" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right w-4 h-4 overflow-visible shrink-0" aria-hidden="true"><path d="M21 3h-6"></path><path d="M21 3v6"></path><path d="m10 14 11-11"></path><path d="M21 14v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"></path></svg>Access Toolkits</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1" class="bg-white">
+  <section class="t-content-breadcrumb-band">
+    <div class="max-w-container mx-auto px-6">
+      <nav aria-label="Breadcrumb">
+        <ol class="flex items-center gap-3 text-sm text-white/90">
+          <li><a href="./index.html" class="inline-flex items-center hover:text-white" aria-label="Home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" style="position:relative;top:3px;"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"></path></svg></a></li>
+          <li aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-light"><path d="m9 18 6-6-6-6"></path></svg></li>
+          <li><a href="./toolkits.html" class="hover:text-white">Toolkits</a></li>
+          <li aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-light"><path d="m9 18 6-6-6-6"></path></svg></li>
+          <li aria-current="page" class="text-white">Toolkit Content Page Template</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="t-content-intro-section">
+    <div class="t-content-top-grid max-w-container mx-auto px-6 grid items-start">
+      <div class="t-content-primary">
+        <h1 class="t-content-main-title text-charcoal mb-6">Data and Systems Governance Guide</h1>
+        <p class="t-content-intro text-charcoal mb-8 max-w-4xl">The Data and Systems Governance Guide helps institutions move from fragmented data practices to a more coordinated, strategic approach to data use.</p>
+        <p class="t-content-intro text-charcoal mb-12 max-w-4xl">Through a structured framework and visual journey map, this toolkit supports institutions in building responsible data infrastructure, strengthening data management, and advancing analytics aligned to institutional goals.</p>
+
+        <h2 class="text-h2 font-semibold text-charcoal mb-5">What You'll Find in This Toolkit</h2>
+        <div class="space-y-4">
+          <div class="t-content-soft-card flex gap-4 bg-gray-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary flex-shrink-0 mt-1"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+            <div><p class="text-card-h3 font-semibold text-charcoal">Guidebook and Journey Map</p><p class="text-body-lg text-charcoal">A phased framework with key activities and milestones</p></div>
+          </div>
+          <div class="t-content-soft-card flex gap-4 bg-gray-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary flex-shrink-0 mt-1"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+            <div><p class="text-card-h3 font-semibold text-charcoal">Templates and Planning Tools</p><p class="text-body-lg text-charcoal">Ready-to-use resources for implementation (e.g., action plans, data dictionary starter)</p></div>
+          </div>
+          <div class="t-content-soft-card flex gap-4 bg-gray-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary flex-shrink-0 mt-1"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+            <div><p class="text-card-h3 font-semibold text-charcoal">Supporting Documents</p><p class="text-body-lg text-charcoal">Materials to align on governance, metrics, and data definitions</p></div>
+          </div>
+          <div class="t-content-soft-card flex gap-4 bg-gray-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary flex-shrink-0 mt-1"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+            <div><p class="text-card-h3 font-semibold text-charcoal">External Resources</p><p class="text-body-lg text-charcoal">Curated content to deepen knowledge and support adoption</p></div>
+          </div>
+        </div>
+        <div class="t-content-detail">
+        <h2>Who This Toolkit Is For</h2>
+        <ul class="t-content-audience-list list-disc">
+          <li>Chief Business Officers (CBOs)</li>
+          <li>Finance and Business Office Teams</li>
+          <li>Institutional Research and Data Analysts</li>
+          <li>IT and Data Management Leaders</li>
+          <li>Strategy, Planning, and Accreditation Teams</li>
+          <li>Cross-functional leaders involved in data-informed decision-making</li>
+        </ul>
+
+        <h2>How to Use This Toolkit</h2>
+        <p class="t-content-use-intro">This toolkit is designed to meet institutions at different stages of data governance maturity:</p>
+
+        <div class="t-content-use-cards">
+          <div class="t-content-use-card accent">
+            <div class="flex items-start gap-4">
+              <div class="icon-chip flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23d3c1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M12 2a7 7 0 0 0-4 12.75V16a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-1.25A7 7 0 0 0 12 2z"></path></svg>
+              </div>
+              <div>
+                <h3>Build Awareness (Getting Started) - <span class="font-normal">Low Lift</span></h3>
+                <p>Use the early phases of the guide to develop a shared understanding of data governance principles and assess your current state.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-content-use-card primary">
+            <div class="flex items-start gap-4">
+              <div class="icon-chip flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0C647B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><path d="M20 8v6"></path><path d="M23 11h-6"></path></svg>
+              </div>
+              <div>
+                <h3>Align and Plan (Developing Practices) - <span class="font-normal">Mid Lift</span></h3>
+                <p>Engage stakeholders across campus, define roles and responsibilities, and begin building consistent data practices and policies.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-content-use-card secondary">
+            <div class="flex items-start gap-4">
+              <div class="icon-chip flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f1bc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M6 22V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v18"></path><path d="M6 12h12"></path><path d="M6 8h12"></path><path d="M8 22v-4a2 2 0 0 1 4 0v4"></path></svg>
+              </div>
+              <div>
+                <h3>Institutionalize (Scaling and Sustaining) - <span class="font-normal">Hight Lift</span></h3>
+                <p>Advance governance structures, embed data practices into daily operations, and strengthen a culture of data-informed decision-making.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+
+      <aside class="t-content-sidebar">
+        <div class="t-content-share-actions mb-4" aria-label="Share this toolkit page">
+          <button type="button" class="t-content-share-button" id="t-content-copy-link" aria-label="Copy page link" title="Copy page link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </button>
+          <a href="mailto:?subject=Data%20and%20Systems%20Governance%20Guide&body=Data%20and%20Systems%20Governance%20Guide" class="t-content-share-button" id="t-content-email-link" aria-label="Email page" title="Email page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+          </a>
+        </div>
+        <div class="t-content-right-card bg-gray-light border border-gray-light mb-6">
+          <h3 class="text-h2 font-semibold text-charcoal mb-5">How I Can Help?</h3>
+          <div class="flex items-center gap-4">
+            <div class="t-content-help-image"><img src="./images/Kelli-Rainey.jpg" alt="Kelli Rainey"/></div>
+            <div>
+              <p class="t-content-help-name mb-1">Kelli Rainey</p>
+              <p class="t-content-help-contact">Senior Director, Student Success Initiatives</p>
+              <p class="t-content-help-contact t-content-help-email"><a href="mailto:kelli.rainey@nacubo.org" class="text-primary font-medium hover:underline">kelli.rainey@nacubo.org</a></p>
+              <p class="t-content-help-contact"><a href="tel:2028612574" class="text-primary font-medium hover:underline">202.861.2574</a></p>
+            </div>
+          </div>
+        </div>
+<a class="t-content-launch inline-flex w-full items-center justify-center gap-2 font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary px-6 text-base bg-primary text-white hover:bg-primary-hover mb-2" href="https://app.nacubostudentsuccess.org/public/toolkits/441cc1f4-d3b0-4a12-b860-b7470731d935" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          Access Full Toolkit
+        </a>
+
+        <div class="text-center">
+          <p class="text-sm text-gray-dark">Free account required for first-time access. No NACUBO membership needed.</p>
+        </div>
+        <div class="t-content-scroll-link">
+          <h3>Learn how other institutions have used this toolkit.</h3>
+          <a href="#how-others-used" class="t-content-scroll-arrow" aria-label="Scroll to How Others Have Used This Toolkit section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+<section id="how-others-used" class="px-4 md:px-6 bg-gray-lighter py-15">
+    <div class="max-w-container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-h2 font-semibold text-charcoal mb-3">How Others Have Used This Toolkit?</h2>
+        <p class="text-gray-dark mb-6">Learn how institutions have used Data and Systems Governance Guide to improve student outcomes.</p>
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <a class="group flex flex-col bg-white rounded-lg border border-gray-light p-6 h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="./institutional-stories/kalamazoo-valley-data-governance.html">
+            <div class="relative w-full h-24 mb-4"><img alt="" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="./images/institutions/kalamazoo.png"/></div>
+            <h3 class="text-card-h3 font-semibold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-3 text-left">Establishing Data Structures and Systems to Improve Student Success</h3>
+            <div class="flex items-center gap-1.5 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 w-3.5 h-3.5 text-gray-medium flex-shrink-0" aria-hidden="true"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+              <span class="text-sm text-gray-medium">Kalamazoo Valley Community College</span>
+            </div>
+<span class="flex items-center gap-1 mt-auto text-base font-semibold text-primary group-hover:underline">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 translate-y-px transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </span>
+          </a>
+          <a class="group flex flex-col bg-white rounded-lg border border-gray-light p-6 h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="./institutional-stories/north-park-university.html">
+            <div class="relative w-full h-24 mb-4"><img alt="" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="./images/institutions/north-park.png"/></div>
+            <h3 class="text-card-h3 font-semibold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-3 text-left">Addressing Disparities in Student Retention and Graduation Rates Through Data Infrastructure and Analytics</h3>
+            <div class="flex items-center gap-1.5 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 w-3.5 h-3.5 text-gray-medium flex-shrink-0" aria-hidden="true"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+              <span class="text-sm text-gray-medium">North Park University</span>
+            </div>
+<span class="flex items-center gap-1 mt-auto text-base font-semibold text-primary group-hover:underline">Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 translate-y-px transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-4 md:px-6 py-15 bg-white">
+    <div class="max-w-container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-h2 font-semibold text-charcoal mb-4">Ready to get started with Data and Systems Governance Guide Toolkit?</h2>
+        <p class="text-gray-dark mb-8 leading-relaxed">Access the full toolkit in the NACUBO Student Success Hub account.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-transparent text-primary border-2 border-primary hover:bg-primary hover:text-white focus-visible:ring-primary px-8 py-4 text-base" href="./find-toolkit.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+            Find Different Toolkit
+          </a>
+          <a href="https://app.nacubostudentsuccess.org/public/toolkits/441cc1f4-d3b0-4a12-b860-b7470731d935" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-8 py-4 text-base">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            Access Full Toolkit
+          </a>
+        </div>
+        <p class="text-gray-dark text-sm mt-6">Questions about accessing the Hub? <a href="./connect.html" class="text-primary font-semibold hover:underline">Contact Us</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdown = document.getElementById('toolkits-nav-dropdown');
+  const toggle = document.getElementById('toolkits-nav-toggle');
+  const menu = document.getElementById('toolkits-nav-menu');
+  if (dropdown && toggle && menu) {
+    let t = null;
+    const clearT = () => { if (t) { clearTimeout(t); t = null; } };
+    const open = () => { clearT(); menu.classList.remove('hidden'); toggle.setAttribute('aria-expanded','true'); };
+    const close = () => { clearT(); menu.classList.add('hidden'); toggle.setAttribute('aria-expanded','false'); };
+    const delayClose = () => { clearT(); t = setTimeout(close, 180); };
+    toggle.addEventListener('click', (e) => { e.preventDefault(); menu.classList.contains('hidden') ? open() : close(); });
+    dropdown.addEventListener('mouseenter', open);
+    dropdown.addEventListener('mouseleave', (e) => {
+      const next = e.relatedTarget;
+      if (next && dropdown.contains(next)) return;
+      delayClose();
+    });
+    menu.addEventListener('mouseenter', open);
+    document.addEventListener('click', (e) => { if (!dropdown.contains(e.target)) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+
+  const pageUrl = window.location.href;
+  const copyButton = document.getElementById('t-content-copy-link');
+  const emailLink = document.getElementById('t-content-email-link');
+  if (emailLink) {
+    emailLink.href = `mailto:?subject=${encodeURIComponent('Data and Systems Governance Guide')}&body=${encodeURIComponent(pageUrl)}`;
+  }
+  if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(pageUrl);
+        copyButton.setAttribute('aria-label', 'Page link copied');
+        copyButton.setAttribute('title', 'Page link copied');
+      } catch (error) {
+        copyButton.setAttribute('aria-label', pageUrl);
+        copyButton.setAttribute('title', pageUrl);
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

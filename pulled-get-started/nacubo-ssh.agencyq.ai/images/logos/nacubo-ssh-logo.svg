@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none">
+  <!-- NACUBO Wordmark in brand maroon -->
+  <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="28" font-weight="700" fill="#872916" letter-spacing="-0.5">NACUBO</text>
+  <!-- Divider line -->
+  <rect x="118" y="8" width="2" height="32" fill="#E5E5E5"/>
+  <!-- Student Success Hub in teal -->
+  <text x="130" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="600" fill="#23D3C1">Student Success</text>
+  <text x="130" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" font-weight="600" fill="#23D3C1">Hub</text>
+</svg>
