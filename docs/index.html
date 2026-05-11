@@ -115,7 +115,7 @@
 </header>
 <main id="main-content" tabindex="-1">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://nacubostudentsuccess.org/","name":"NACUBO Student Success Hub","description":"Find research-backed tools and frameworks to align financial decisions with student success. Free resources for higher education leaders.","url":"https://nacubostudentsuccess.org/","isPartOf":{"@id":"https://nacubostudentsuccess.org/#website"},"publisher":{"@id":"https://nacubostudentsuccess.org/#organization"},"inLanguage":"en-US"}]}</script>
-<section class="relative overflow-hidden lg:min-h-hero" style="min-height:480px;">
+<section class="relative overflow-hidden lg:min-h-hero" style="min-height:460px;">
 <div class="absolute inset-0 overflow-hidden">
 <div class="absolute inset-0 bg-charcoal">
 </div>
@@ -164,16 +164,16 @@
 <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-6 py-3 text-base" href="https://app.nacubostudentsuccess.org/login" style="width:190px;height:52px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right w-4 h-4" aria-hidden="true"><path d="M21 3h-6"></path><path d="M21 3v6"></path><path d="m10 14 11-11"></path><path d="M21 14v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"></path></svg>Access Toolkits</a>
 
 </div>
-<a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary px-6 py-3 text-base bg-transparent text-white border-2 border-white hover:bg-white hover:text-charcoal" href="./find-toolkit.html" style="width:170px;height:52px;">New Here?</a>
+<a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary px-6 py-3 text-base bg-transparent text-white border-2 border-white hover:bg-white hover:text-charcoal" href="./get-started.html" style="width:170px;height:52px;">New Here?</a>
 </div>
 </div>
 </div>
-</div>
-<a id="hero-scroll-arrow" href="#featured-highlights" aria-label="Scroll to next section" style="border-color:currentColor;color:#23d3c1;" class="absolute z-30 left-1/2 -translate-x-1/2 bottom-10 md:bottom-12 inline-flex items-center justify-center w-10 h-10 rounded-full border-2 shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal">
+<a id="hero-scroll-arrow" href="#featured-highlights" aria-label="Scroll to next section" style="border-color:currentColor;color:#23d3c1;bottom:-20px;" class="absolute z-30 left-1/2 -translate-x-1/2 inline-flex items-center justify-center w-10 h-10 rounded-full border-2 shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal">
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true">
 <path d="m6 9 6 6 6-6"></path>
 </svg>
 </a>
+</div>
 </section>
 <section id="featured-highlights" class="bg-gray-lighter">
 <div class="max-w-container mx-auto px-6 py-15">
@@ -290,7 +290,7 @@
 </div>
 </div>
 <div class="flex flex-wrap justify-center gap-4 mt-16">
-<a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary px-6 py-3 text-base bg-charcoal text-white hover:bg-charcoal/90" href="https://app.nacubostudentsuccess.org">New Here?</a>
+<a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary px-6 py-3 text-base bg-charcoal text-white hover:bg-charcoal/90" href="./get-started.html">New Here?</a>
 <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-transparent border-2 focus-visible:ring-primary px-6 py-3 text-base border-charcoal text-charcoal hover:bg-charcoal hover:text-white" href="./find-toolkit.html">Find Toolkit</a>
 </div>
 </div>
@@ -795,7 +795,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     heroScrollArrow.addEventListener('click', (event) => {
       event.preventDefault();
-      const headerOffset = 88;
+      const headerOffset = 72;
       const targetTop = featuredHighlights.getBoundingClientRect().top + window.pageYOffset - headerOffset;
       window.scrollTo({ top: targetTop, behavior: 'smooth' });
     });
