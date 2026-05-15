@@ -11,6 +11,7 @@
 #finder-empty{display:none;padding:1rem;border:1px solid #e5e5e5;border-radius:8px;background:#fff;color:#212427;font-size:.95rem}
 #finder-empty[data-show="true"]{display:block}
 main h2 + p{font-size:18px}
+.toolkit-search-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
 </style>
 
 <meta name="theme-color" content="#0C647B"/>
@@ -64,7 +65,7 @@ main h2 + p{font-size:18px}
 </button>
 <div id="toolkits-nav-menu" class="absolute left-0 top-full hidden min-w-[220px] rounded-md border border-gray-light bg-white shadow-md z-50 group-hover:block group-focus-within:block">
 <a href="https://app.nacubostudentsuccess.org/login" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Access Toolkits</a>
-<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Find Toolkit</a>
+<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Toolkit Search</a>
 <a href="./overviw.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Overview</a>
 </div>
 </div>
@@ -100,30 +101,37 @@ main h2 + p{font-size:18px}
 <main id="main-content" tabindex="-1">
 <header class="relative overflow-hidden lg:min-h-hero-sm">
 <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
-<div class="absolute inset-0 bg-charcoal">
+<img src="./images/Toolkit-Search.jpg" alt="" class="toolkit-search-hero-image" aria-hidden="true"/>
+<div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(33,36,39,1) 0%, rgba(33,36,39,.58) 45%, rgba(33,36,39,.03) 100%);">
 </div>
 <div class="absolute inset-0 bg-gradient-to-br from-primary/15 via-transparent to-accent/10">
 </div>
 <div class="absolute inset-y-0 left-0 w-0 pointer-events-none">
-<svg viewBox="-42 -42 284 284" class="absolute top-1/2" style="height:200%;width:auto;left:0;transform:translateY(-50%) translateX(-30%)" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="-42 -42 284 284" class="absolute top-1/2" style="height:148%;width:auto;left:0;transform:translateY(-50%) translateX(-35%)" preserveAspectRatio="xMidYMid meet">
 <g transform="rotate(45, 100, 100)">
 <rect x="0" y="0" width="98.5" height="98.5" fill="#FFCC2E">
 </rect>
-<rect x="101.5" y="0" width="98.5" height="98.5" fill="#212427">
+<rect x="100.5" y="100.5" width="98.5" height="98.5" fill="#23D3C1">
 </rect>
-<rect x="101.5" y="101.5" width="98.5" height="98.5" fill="#23D3C1">
+<rect x="0" y="100.5" width="98.5" height="98.5" fill="#212427">
 </rect>
-<rect x="0" y="101.5" width="98.5" height="98.5" fill="transparent">
+<rect x="0" y="100.5" width="98.5" height="98.5" fill="transparent">
+</rect>
+<rect x="0" y="0" width="98.5" height="98.5" fill="#212427" fill-opacity=".74">
+</rect>
+<rect x="100.5" y="100.5" width="98.5" height="98.5" fill="#212427" fill-opacity=".74">
+</rect>
+<rect x="0" y="100.5" width="98.5" height="98.5" fill="#212427" fill-opacity=".64">
 </rect>
 </g>
 </svg>
 </div>
 <div class="absolute inset-0 flex pointer-events-none" aria-hidden="true">
-<div class="flex-1 bg-gradient-to-r from-transparent to-charcoal/95">
+<div class="flex-1">
 </div>
-<div class="w-[calc(100vw-40px)] md:w-[calc(100vw-48px)] max-w-container shrink-0 bg-charcoal/95">
+<div class="ml-6 w-[calc(100vw-120px)] md:w-[calc(100vw-184px)] max-w-container shrink-0" style="background:linear-gradient(90deg, rgba(33,36,39,.95) 0%, rgba(33,36,39,.7) 45%, rgba(33,36,39,0) 100%);">
 </div>
-<div class="flex-1 bg-gradient-to-l from-transparent to-charcoal/95">
+<div class="flex-1">
 </div>
 </div>
 <div class="absolute top-16 right-[8%] w-28 md:w-40 lg:w-56 h-28 md:h-40 lg:h-56 border border-white/[0.04] rounded-full animate-drift-diagonal"></div>
@@ -137,14 +145,14 @@ main h2 + p{font-size:18px}
 </li>
 <li class="flex items-center gap-2">
 <span aria-hidden="true" class="text-gray-medium">/</span>
-<span aria-current="page" class="text-gray-medium font-medium">Find Toolkit</span>
+<span aria-current="page" class="text-gray-medium font-medium">Toolkit Search</span>
 </li>
 </ol>
 </nav>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-start">
 <div>
-<h1 class="text-display font-bold text-white mb-5">Find Toolkit</h1>
-<p class="text-body-lg text-gray-lighter leading-relaxed max-w-2xl">Explore our library of 11 practical, research-backed toolkits designed to help institutions align financial decisions with student success outcomes.</p>
+<h1 class="text-display font-bold text-white mb-5">Toolkit Search</h1>
+<p class="text-body-lg text-gray-lighter leading-relaxed max-w-2xl">Search our library of 11 practical, research-backed toolkits designed to help institutions align financial decisions with student success outcomes.</p>
 </div>
 
 </div>
@@ -155,7 +163,7 @@ main h2 + p{font-size:18px}
 <section class="px-4 md:px-6 bg-white py-15">
 <div class="max-w-container mx-auto px-6">
 <div id="toolkit-finder" class="bg-gray-lighter rounded-lg p-6 mb-8">
-<h2 class="text-h2 font-semibold text-charcoal mb-4" style="font-size:2rem;">Toolkit Finder</h2>
+<h2 class="text-h2 font-semibold text-charcoal mb-4" style="font-size:2rem;">Find Toolkit</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <div class="flex flex-col gap-1.5">
 <label class="text-sm font-semibold text-charcoal">Your Goal</label>

@@ -83,12 +83,37 @@
       }
 
       .services-hero-copy {
+        position: relative;
+        z-index: 1;
         transform: none;
+      }
+
+      .services-hero-text-overlay {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: min(68vw, 960px);
+        background: linear-gradient(90deg, rgba(33, 36, 39, 0.38) 0%, rgba(33, 36, 39, 0.64) 28%, rgba(33, 36, 39, 0.72) 58%, rgba(33, 36, 39, 0) 100%);
+        pointer-events: none;
       }
 
       .services-hero-copy h1 {
         margin-top: 0 !important;
         padding-top: 0;
+      }
+
+      .services-hero-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .services-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(33, 36, 39, 0.44) 0%, rgba(33, 36, 39, 0.46) 18%, rgba(33, 36, 39, 0.5) 42%, rgba(33, 36, 39, 0.03) 100%);
       }
 
       .services-hero-video {
@@ -163,7 +188,7 @@
 </button>
 <div id="toolkits-nav-menu" class="absolute left-0 top-full hidden min-w-[220px] rounded-md border border-gray-light bg-white shadow-md z-50 group-hover:block group-focus-within:block">
 <a href="https://app.nacubostudentsuccess.org/login" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Access Toolkits</a>
-<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Find Toolkit</a>
+<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Toolkit Search</a>
 <a href="./overviw.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Overview</a>
 </div>
 </div>
@@ -198,8 +223,18 @@
     </header>
     <main id="main-content" tabindex="-1">
       <section class="relative overflow-hidden lg:min-h-hero-sm">
-        <div class="absolute inset-0 bg-charcoal">
+        <img src="./images/Services.jpg" alt="" class="services-hero-image" aria-hidden="true"/>
+        <div class="absolute inset-y-0 left-0 w-0 pointer-events-none" aria-hidden="true">
+          <svg viewBox="-42 -42 284 284" class="absolute top-1/2" style="height:150%;width:auto;left:0;transform:translateY(-50%) translateX(-35%)" preserveAspectRatio="xMidYMid meet">
+            <g transform="rotate(45, 100, 100)">
+              <rect x="0" y="0" width="98.5" height="98.5" fill="#FFCC2E"></rect>
+              <rect x="100.5" y="100.5" width="98.5" height="98.5" fill="#23D3C1"></rect>
+              <rect x="0" y="100.5" width="98.5" height="98.5" fill="#212427"></rect>
+            </g>
+          </svg>
         </div>
+        <div class="services-hero-overlay"></div>
+        <div class="services-hero-text-overlay" aria-hidden="true"></div>
         <div class="relative max-w-container mx-auto px-6 pt-12 pb-20 md:pt-14 md:pb-24 lg:pt-16 lg:pb-28">
           <nav aria-label="Breadcrumb" class="flex items-center text-sm mb-6 [&amp;_a]:text-white/60 [&amp;_a:hover]:text-white [&amp;_span]:text-white/40 [&amp;_li:last-child_span]:text-white/80">
             <ol class="flex items-center gap-2">
@@ -376,7 +411,7 @@
             </div>
           </div>
           <div class="text-center mt-8">
-            <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-6 py-3 text-base" href="./connect.html">Request a Consultation</a>
+            <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-6 py-3 text-base" href="./connect.html">Request a Call</a>
           </div>
         </div>
       </section>
@@ -966,7 +1001,7 @@
     <div class="max-w-2xl mx-auto">
       <h2 class="text-h2 font-semibold text-charcoal mb-4">Ready to Partner With NACUBO?</h2>
       <p class="text-gray-dark leading-relaxed mb-6">Join institutions transforming financial practices to advance student outcomes.</p>
-      <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-6 py-3 text-base" href="./connect.html">Request a Consultation</a>
+      <a class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-6 py-3 text-base" href="./connect.html">Request a Call</a>
     </div>
   </div>
 </section>
