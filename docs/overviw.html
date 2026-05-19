@@ -62,9 +62,9 @@
 </svg>
 </button>
 <div id="toolkits-nav-menu" class="absolute left-0 top-full hidden min-w-[220px] rounded-md border border-gray-light bg-white shadow-md z-50 group-hover:block group-focus-within:block">
-<a href="https://app.nacubostudentsuccess.org/login" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Access Toolkits</a>
-<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Toolkit Search</a>
 <a href="./overviw.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Overview</a>
+<a href="./find-toolkit.html" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Search Toolkits</a>
+<a href="https://app.nacubostudentsuccess.org/login" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm text-charcoal whitespace-nowrap hover:bg-gray-lighter hover:text-primary">Access Toolkits</a>
 </div>
 </div>
 <a href="./events-and-resources.html" class="px-3 py-2 text-nav font-medium rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-charcoal hover:text-primary hover:bg-gray-lighter">Events and Resources</a>
@@ -193,7 +193,7 @@
 </path>
 </svg><span><span class="font-semibold text-charcoal">Measurement</span> and <span class="font-semibold text-charcoal">evaluation resources</span> to track progress and outcomes.</span></li>
 </ul>
-<div class="text-center mt-8"><a href="./find-toolkit.html" class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-8 py-3 text-base">Toolkit Search</a></div>
+<div class="text-center mt-8"><a href="./find-toolkit.html" class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-8 py-3 text-base">Search Toolkits</a></div>
 </div>
 <div class="bg-white rounded-lg border border-gray-light p-6">
 <div class="flex items-center gap-3 mb-4">
@@ -287,13 +287,13 @@
 <div class="bg-white rounded-lg border border-primary/20 p-6">
 <div class="flex items-center gap-3 mb-4">
 <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary flex-shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database w-6 h-6 text-white" aria-hidden="true">
-<ellipse cx="12" cy="5" rx="9" ry="3">
-</ellipse>
-<path d="M3 5V19A9 3 0 0 0 21 19V5">
-</path>
-<path d="M3 12A9 3 0 0 0 21 12">
-</path>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined w-6 h-6 text-white" aria-hidden="true">
+<path d="M12 16v5"></path>
+<path d="M16 14v7"></path>
+<path d="M20 10v11"></path>
+<path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.708 0L2 15"></path>
+<path d="M4 18v3"></path>
+<path d="M8 14v7"></path>
 </svg>
 </div>
 <h3 class="text-h2 font-semibold text-charcoal mb-0" style="font-size:1.375rem;">Data to Inform Decisions</h3>
@@ -303,11 +303,13 @@
 <div class="bg-white rounded-lg border border-primary/20 p-6">
 <div class="flex items-center gap-3 mb-4">
 <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary flex-shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign w-6 h-6 text-white" aria-hidden="true">
-<line x1="12" x2="12" y1="2" y2="22">
-</line>
-<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
-</path>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark w-6 h-6 text-white" aria-hidden="true">
+<line x1="3" x2="21" y1="22" y2="22"></line>
+<line x1="6" x2="6" y1="18" y2="11"></line>
+<line x1="10" x2="10" y1="18" y2="11"></line>
+<line x1="14" x2="14" y1="18" y2="11"></line>
+<line x1="18" x2="18" y1="18" y2="11"></line>
+<polygon points="12 2 20 7 4 7"></polygon>
 </svg>
 </div>
 <h3 class="text-h2 font-semibold text-charcoal mb-0" style="font-size:1.375rem;">Financial Resource Optimization</h3>
@@ -317,13 +319,10 @@
 <div class="bg-white rounded-lg border border-primary/20 p-6">
 <div class="flex items-center gap-3 mb-4">
 <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary flex-shrink-0">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-6 h-6 text-white" aria-hidden="true">
-<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-</path>
-<path d="M22 10v6">
-</path>
-<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
-</path>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route w-6 h-6 text-white" aria-hidden="true">
+<circle cx="6" cy="19" r="3"></circle>
+<path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
+<circle cx="18" cy="5" r="3"></circle>
 </svg>
 </div>
 <h3 class="text-h2 font-semibold text-charcoal mb-0" style="font-size:1.375rem;">Student-Centered Planning, Processes, and Budgeting</h3>
@@ -332,12 +331,57 @@
 </div>
 </div>
 <div class="text-center mt-8">
-<a href="./find-toolkit.html" class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-8 py-3 text-base">Toolkit Search</a>
+<a href="./find-toolkit.html" class="inline-flex items-center justify-center gap-2 font-semibold rounded transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-primary text-white hover:bg-primary-hover focus-visible:ring-primary px-8 py-3 text-base">Search Toolkits</a>
+</div>
+</div>
+</section>
+<section class="px-4 md:px-6 bg-white py-15">
+<div class="max-w-container mx-auto px-6">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="text-h2 font-semibold text-charcoal mb-4">Other Institutions Using the Toolkits</h2>
+<p class="text-gray-dark max-w-2xl mx-auto">Learn how other institutions have used the toolkits to improve student outcomes.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<a class="group flex flex-col bg-white rounded-lg border border-gray-light p-6 h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="./institutional-stories/brooklyn-college.html">
+<div class="relative w-full h-24 mb-4">
+<img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(max-width: 768px) 100vw, 150px" srcSet="./images/institutions/brooklyn.png 640w, ./images/institutions/brooklyn.png 750w, ./images/institutions/brooklyn.png 828w, ./images/institutions/brooklyn.png 1080w, ./images/institutions/brooklyn.png 1200w, ./images/institutions/brooklyn.png 1920w, ./images/institutions/brooklyn.png 2048w, ./images/institutions/brooklyn.png 3840w" src="./images/institutions/brooklyn.png"/>
+</div>
+<h3 class="text-content-card-h3 font-semibold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-2">Assessing Needs, Refining Practices, and Sustaining Improved Ways of Working</h3>
+<div class="flex items-center gap-1.5 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 w-3.5 h-3.5 text-gray-medium flex-shrink-0" aria-hidden="true"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+<span class="text-sm text-gray-medium">Brooklyn College</span>
+</div>
+<span class="flex items-center gap-1 mt-auto text-base font-semibold text-primary group-hover:underline">Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 translate-y-px transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+<a class="group flex flex-col bg-white rounded-lg border border-gray-light p-6 h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="./institutional-stories/rutgers-university-newark.html">
+<div class="relative w-full h-24 mb-4">
+<img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(max-width: 768px) 100vw, 150px" srcSet="./images/institutions/rutgers-newark.png 640w, ./images/institutions/rutgers-newark.png 750w, ./images/institutions/rutgers-newark.png 828w, ./images/institutions/rutgers-newark.png 1080w, ./images/institutions/rutgers-newark.png 1200w, ./images/institutions/rutgers-newark.png 1920w, ./images/institutions/rutgers-newark.png 2048w, ./images/institutions/rutgers-newark.png 3840w" src="./images/institutions/rutgers-newark.png"/>
+</div>
+<h3 class="text-content-card-h3 font-semibold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-2">Leveraging NACUBO Resources to Enhance Efficiency, Data-Informed Decision-Making, and Stakeholder Engagement</h3>
+<div class="flex items-center gap-1.5 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 w-3.5 h-3.5 text-gray-medium flex-shrink-0" aria-hidden="true"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+<span class="text-sm text-gray-medium">Rutgers University-Newark</span>
+</div>
+<span class="flex items-center gap-1 mt-auto text-base font-semibold text-primary group-hover:underline">Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 translate-y-px transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+<a class="group flex flex-col bg-white rounded-lg border border-gray-light p-6 h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="./institutional-stories/south-central-college.html">
+<div class="relative w-full h-24 mb-4">
+<img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" sizes="(max-width: 768px) 100vw, 150px" srcSet="./images/institutions/south-central.png 640w, ./images/institutions/south-central.png 750w, ./images/institutions/south-central.png 828w, ./images/institutions/south-central.png 1080w, ./images/institutions/south-central.png 1200w, ./images/institutions/south-central.png 1920w, ./images/institutions/south-central.png 2048w, ./images/institutions/south-central.png 3840w" src="./images/institutions/south-central.png"/>
+</div>
+<h3 class="text-content-card-h3 font-semibold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-2">Building Awareness, Cultivating Stewardship, and Institutionalizing Practices</h3>
+<div class="flex items-center gap-1.5 mb-3">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2 w-3.5 h-3.5 text-gray-medium flex-shrink-0" aria-hidden="true"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+<span class="text-sm text-gray-medium">South Central College</span>
+</div>
+<span class="flex items-center gap-1 mt-auto text-base font-semibold text-primary group-hover:underline">Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 translate-y-px transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+</a>
+</div>
 </div>
 </div>
 </section>
 
-<section class="px-4 md:px-6 bg-white py-15">
+<section class="px-4 md:px-6 bg-gray-lighter py-15">
 <div class="max-w-container mx-auto px-6">
 <div class="text-center mb-10">
 <h2 class="text-h2 font-semibold text-charcoal mb-4">Frequently Asked Questions</h2>
@@ -409,7 +453,7 @@
 </div>
 </div>
 </section>
-<section class="px-4 md:px-6 bg-gray-lighter py-15">
+<section class="px-4 md:px-6 bg-white py-15">
 <div class="max-w-container mx-auto px-6">
 <div class="text-center">
 <h2 class="text-h2 font-semibold text-charcoal mb-4">Ready to Get Started?</h2>
